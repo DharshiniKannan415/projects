@@ -1,0 +1,26 @@
+<h1 id="Name">Name</h1>
+<style>
+    button{
+        height: 50px;
+        width: 100px;
+        border-radius: 25px;
+
+    }
+   button:hover{
+     background-color: burlywood;
+     box-shadow: 10px 10px 10px gray;
+   }
+
+
+
+</style>
+<button onclick="nameChange(event)">Rose</button>
+<button onclick="nameChange(event)">Sunflower</button>
+<button onclick="nameChange(event)">Lotus</button>
+<button onclick="nameChange(event)">Hibiscus</button>
+<script>
+    var h1 = document.getElementById("Name")
+    function nameChange(event){
+        h1.textContent = event.target.textContent
+}
+</script>
