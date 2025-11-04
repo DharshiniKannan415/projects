@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: bisque;
+            background-image: url(https://tse4.mm.bing.net/th/id/OIP.61Xy4UeKkiY13619sFxICAHaE7?r=0&rs=1&pid=ImgDetMain&o=7&rm=3);
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+        }
+        h1{
+            color: navy;
+        }
+        input{
+            justify-content: space-evenly;
+            height: 25px;
+            width: 185px;
+            border-radius: 20px;
+            background-color: lightgray;
+        }
+        div{
+            margin-top: 250px;
+            width: 500px;
+            border: 1px solid;
+            box-shadow: 20px 20px 20px black;
+            border-radius: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        ::placeholder{
+            color: rgb(88, 86, 86);
+            font-size: 15px;
+           
+        }
+        label{
+            font-size: 25px;
+        }
+        button{
+            height: 30px;
+            width: 90px;
+            font-size: larger;
+            border-radius: 15px;
+            margin-bottom: 15px;
+        }
+        button:hover{
+            background-color: aqua;
+            border-color: blue;
+        }
+        input:hover{
+            border-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Login Here</h1>
+        <form>
+            <table>
+                <tr>
+                    <td>
+                          <label for="one">Name : </label>
+                    </td>
+                    <td>
+                             <input type="text" id="one" placeholder="Enter Name" ><br><br>
+                    </td>
+              </tr>
+                <tr>
+                    <td>
+                            <label for="two">Number : </label>
+                    </td>
+                    <td>
+                          <input type="number" id="two" placeholder="Enter Number"><br><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                           <label for="three">Email Id :</label>
+                    </td>
+                    <td>
+                            <input type="email" id="three" placeholder="Enter Email"><br><br>
+                    </td>
+               </tr>
+                <tr>
+                    <td>
+                          <label for="four">Password : </label>
+                    </td>
+                    <td>
+                        <input type="password" id="four" placeholder="Enter Password">  <br><br>
+                    </td>
+                </tr>
+            </table>
+            <br>
+          <button>Login</button>
+          
+ </form>
+    </div>
+</body>
+</html>
