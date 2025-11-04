@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                background: linear-gradient(to right bottom,red, rgb(64, 64, 204), green);
+                background-size: cover;
+                background-attachment: fixed;
+
+            }
+            div {
+                border: 10px solid rgb(12, 7, 2);
+                border-radius: 25px;
+                box-shadow: 8px 8px 8px 8px rgb(201, 187, 195);
+                opacity: 0.9;
+                width: 500px;
+                padding: 10px;
+                margin: 150px 450px;
+                text-align: center;
+                background-color: rgb(224, 143, 188);
+            }
+            h1{
+                text-align: center;
+                color: rgba(255, 0, 0, 0.596);
+                text-shadow: 5px 5px 5px rgb(255, 255, 255);
+                font-size: 45px;
+            }
+            button {
+                border-radius: 8px;
+                height: 40px;
+                width: 70px;
+                font-size: large;
+            }
+            #num {
+                height: 35px;
+               font-size: larger;
+            }
+            #score {
+                font-size: 35px;
+                color: rgb(33, 97, 33);
+            }
+            #alert {
+               font-size: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+        <h1><b>Guess the Number</b></h1>
+        <input id="num" placeholder="Enter the Number...">
+        <button onclick="guessNumber()">Check</button>
+        <p id="result"></p>
+        <P id="score">Your Score : 10</P>
+        <script>
+            //selecting input box, paragraph
+            var num = document.getElementById("num")
+            var result = document.getElementById("result")
+            var score = document.getElementById("score")
+            var Score = 10
+            var a = Math.random()
+             var b = (Math.floor(a*10)+1)
+             function guessNumber() {
+             var check = Number(num.value)
+              if(b==check){
+                    console.log("You are Correct")
+                     result.textContent = "You are Right"
+                     alert("Congratulations!!!! YOU WON 🎉")
+                }
+                else {
+                    Score = Score-1
+                    score.textContent = "Score : "+Score
+                    console.log("Yor are Wrong")
+                    result.textContent = "You are Wrong"
+                    
+                    
+                }
+                
+            }
+           
+         </script>
+         </div>
+    </body>
+</html>
