@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     <style>
+        body {
+            background-color: burlywood;
+            text-align: center;
+            
+        }
+        button {
+            width: 250px;
+            height: 50px;
+            border-radius: 25px;
+            color: rgb(4, 4, 14);
+            background-color: hotpink;
+            font-size: large;
+        }
+        #but {
+        width: 100px;
+        padding: 30px;
+        margin: 10px 0;
+        line-height: 15px;
+        display: flex;
+        align-items: center;
+        color: rgb(4, 4, 14);
+        background-color:  cyan;
+        font-size: large;
+        margin-left: 630px;
+        }
+    </style>
+    </head>
+    <body>
+        <h1><u>Hello EveryOne!!!</u></h1>
+        <h1 id="h1"><b>Code is Impossible 🤐<b></h1>
+        <button   onclick="change()"><i>Change Your Thoughts</i></button>
+        <button id="but"  onclick="showAlert()"><b>Click Me</b></button>
+    </body>
+</html>
+<script>
+    var demo = document.getElementById("h1")
+    function change(){
+        demo.textContent = "Possible when you see it as Fun 🤩"
+    }
+   function showAlert(){
+   alert("Yes !! Coding is Fun 😄");
+    }
+</script>
